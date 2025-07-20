@@ -34,7 +34,7 @@ def button(update, context: CallbackContext):
         query.message.reply_text("Utilise /snipe [contract_address] pour sniper un token.")
 
 def main():
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater(TOKEN)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
